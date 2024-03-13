@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1,
         initialSlide: 2,
         cardsEffect: {
-            perSlideOffset: 20,
+            perSlideOffset: 8,
             perSlideRotate: 1.5,
             rotate: true,
             slideShadows: false,
