@@ -80,12 +80,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         const reloadTimeoutId = setTimeout(() => {
             reloadButton.style.opacity = "1";
-        }, lines.length * 2000 + 500);
+        }, lines.length * 3000 + 500);
         timeouts.push(reloadTimeoutId);
 
         const pointerTimeoutId = setTimeout(() => {
             reloadButton.style.pointerEvents = "auto";
-        }, lines.length * 2000 + 1500);
+        }, lines.length * 3000 + 1500);
         timeouts.push(pointerTimeoutId);
     };
 
