@@ -231,26 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const celebrationMessage = document.querySelector('.celebration-message');
 
     const messages = [
-        "Eres mi todo... ❤️",
-        "Eres mi sueño hecho realidad... 💫",
-        "Te pienso siempre... 💭",
-        "Contigo todo es perfecto... 🌟",
-        "Eres mi inspiración... 💖",
-        "Eres mi refugio... 🏠",
-        "Eres mi amor eterno... 💕",
-        "Eres mi paz interior... 🌸",
-        "Contigo todo es mejor... 🌈",
-        "Eres mi amor verdadero... 💞",
-        "Eres tan linda y tierna... 💖",
-        "Eres mi sueño cumplido... 🌠",
-        "Eres mi mundo... 🌍",
-        "Eres perfecta... 💎",
-        "Eres hermosa... 🌹",
-        "Eres única... 🦄",
-        "Eres encantadora... ✨",
-        "Eres preciosa... 🌼",
-        "Eres adorable... 💐",
-        "Eres maravillosa... 🌺"
+        "Para ti mi pequeña, una flor amarilla... por una vida juntos<br>✨ <span>🌻</span> ✨"
     ];
 
     let fadeTimeout;
@@ -273,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 50);
 
         const randomIndex = Math.floor(Math.random() * messages.length);
-        celebrationMessage.textContent = messages[randomIndex];
+        celebrationMessage.innerHTML = messages[randomIndex];
 
         particlesJS.load('particles-js', 'path_to_particles.json', function () {
             fadeTimeout = setTimeout(() => {
